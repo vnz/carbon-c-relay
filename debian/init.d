@@ -1,19 +1,16 @@
 #!/bin/sh
 ### BEGIN INIT INFO
 # Provides:          carbon-c-relay
-# Required-Start:    $network $local_fs
-# Required-Stop:
+# Required-Start:    $time $network $local_fs $remote_fs
+# Required-Stop:     $network $remote_fs
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
-# Short-Description: <Enter a short description of the software>
-# Description:       <Enter a long description of the software>
-#                    <...>
-#                    <...>
+# Short-Description: carbon-c-relay
+# Description:       Carbon-like graphite line mode relay
 ### END INIT INFO
 
-# Author: vinz <vinz@sorcery>
+# Author: vnz <vleraitre@gmail.com>
 
-# PATH should only include /usr/* if it runs after the mountnfs.sh script
 PATH=/sbin:/usr/sbin:/bin:/usr/bin
 DESC=carbon-c-relay             # Introduce a short description here
 NAME=carbon-c-relay             # Introduce the short server's name here

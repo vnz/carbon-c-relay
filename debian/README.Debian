@@ -1,6 +1,21 @@
 carbon-c-relay for Debian
 -------------------------
 
-<possible notes regarding this package - if none, delete this file>
+Build carbon-c-relay package
+=====================
 
- -- vinz <vinz@sorcery>  Fri, 24 Apr 2015 09:17:02 +0200
+* debian/rules clean
+* git-buildpackage -i -us -uc -b
+
+
+Upstream update
+===============
+
+* debian/rules clean
+* git-import-orig path/to/carbon-c-relay\_0.39.orig.tar.gz
+* dch -v '0.39-1' -M -D unstable 'Upstream release carbon-c-relay 0.39'
+* git add .
+* git commit -m 'Upstream release carbon-c-relay 0.39'
+* git tag 0.39-1
+
+ -- vnz <vleraitre@gmail.com>  Fri, 24 Apr 2015 09:17:02 +0200
