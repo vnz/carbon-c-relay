@@ -1,0 +1,5 @@
+carbon-c-relay (0.39-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- vinz <vinz@sorcery>  Fri, 24 Apr 2015 09:17:02 +0200
